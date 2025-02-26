@@ -60,7 +60,7 @@ var myEnumeration = Accelatrix.Collections.Enumerable.Range(0, 10000000)
 var myResult = new Accelatrix.Collections.AsyncEnumerable(myEnumeration).Select(z => z).ToList();
 // var continuation = myResult.ContinueWith(z => console.log(z));
 var myResult = new Accelatrix.Collections.AsyncEnumerable(myEnumeration).Select(z => z).ToList()
-// .ContinueWith(z => console.log(z), true);
+.ContinueWith(z => console.log(z), true);
 
 console.log('myResult2:', myResult)
 //========================================================================
